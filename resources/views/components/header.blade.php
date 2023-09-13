@@ -79,8 +79,8 @@
                 <div class="d-sm-none d-lg-inline-block">Hi, {{ Auth::user()->name }}</div>
             </a>
             <div class="dropdown-menu dropdown-menu-right">
-                <a href="features-settings.html" class="dropdown-item has-icon">
-                    <i class="fas fa-cog"></i> Settings
+                <a href="{{ route('profile.edit') }}" class="dropdown-item has-icon">
+                    <i class="fas fa-user"></i> profile
                 </a>
                 <div class="dropdown-divider"></div>
                 <a href="#" onclick="event.preventDefault(); document.getElementById('input-form').submit();"
